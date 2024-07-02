@@ -40,13 +40,26 @@ public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (eventData.dragging)
-        { 
-                rb2d.angularVelocity = Input.GetAxis("Mouse Y") * 100;
-            
+        if (Input.mousePosition.x < Screen.width / 2f)
+        {
+            if (eventData.dragging)
+            {
+                rb2d.angularVelocity = Input.GetAxis("Mouse Y") * -100;
+
+            }
         }
+        else
+        {
+           
+            if (eventData.dragging)
+            {
+                rb2d.angularVelocity = Input.GetAxis("Mouse Y") * 100;
+
+            }
+        }
+      
        
-        Debug.Log("woo");
+       
       
     }
 

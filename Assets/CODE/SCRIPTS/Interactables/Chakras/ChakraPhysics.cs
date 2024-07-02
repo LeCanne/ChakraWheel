@@ -29,13 +29,14 @@ public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
     {
         if(ChosenSlot != null)
         {
-             if(inDrag == false)
-        {
+          if(inDrag == false)
+          {
             if (onSlot == true)
             {
                 transform.position = ChosenSlot.transform.position;
+                    gameObject.layer = 6;
             }
-        }
+          }
         }
        
        

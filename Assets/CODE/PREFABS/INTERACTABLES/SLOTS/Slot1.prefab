@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6989688930835158822}
   - component: {fileID: 1866928346585401571}
   - component: {fileID: 8498580633286034932}
+  - component: {fileID: -5277403907658005515}
   m_Layer: 5
   m_Name: Slot1
   m_TagString: Slot
@@ -152,3 +153,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 87.23
+--- !u!114 &-5277403907658005515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6036396579504340085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0844399d1d46b747a1f4b042010fe44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DarkChakra: {fileID: 0}
+  isDarkened: 0
+  ContainedChakra: {fileID: 0}
