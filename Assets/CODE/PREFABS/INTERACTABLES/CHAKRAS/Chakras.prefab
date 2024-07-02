@@ -171,6 +171,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spriteChakra: {fileID: 0}
+  spriteList:
+  - {fileID: -467738062, guid: 3357593d37411444789bcd6de2cc4511, type: 3}
+  - {fileID: -1471926467, guid: 3357593d37411444789bcd6de2cc4511, type: 3}
+  - {fileID: -1289401006, guid: 3357593d37411444789bcd6de2cc4511, type: 3}
+  - {fileID: 1343109814, guid: 3357593d37411444789bcd6de2cc4511, type: 3}
+  - {fileID: -1238180397, guid: 3357593d37411444789bcd6de2cc4511, type: 3}
+  - {fileID: -989295858, guid: 3357593d37411444789bcd6de2cc4511, type: 3}
+  - {fileID: 1437603161, guid: 3357593d37411444789bcd6de2cc4511, type: 3}
+  - {fileID: -329280676, guid: 3357593d37411444789bcd6de2cc4511, type: 3}
+  nameColor: 
 --- !u!114 &-2224123342223231396
 MonoBehaviour:
   m_ObjectHideFlags: 0
