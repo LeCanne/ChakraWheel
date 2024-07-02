@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class WheelController : MonoBehaviour, IDragHandler
+public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler
 {
     private Rigidbody2D rb2d;
     public float speed;
@@ -31,5 +31,9 @@ public class WheelController : MonoBehaviour, IDragHandler
       
     }
 
-   
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        
+        rb2d.angularVelocity = 0;
+    }
 }
