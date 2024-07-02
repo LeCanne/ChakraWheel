@@ -232,11 +232,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 176
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 176
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -268,11 +268,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 208
+      value: 103.99997
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 208.00003
+      value: 104.000015
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -289,6 +289,10 @@ PrefabInstance:
     - target: {fileID: 6036396579504340085, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_Name
       value: Slot1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498580633286034932, guid: 8c17616067069a0449a2052c7336023f, type: 3}
+      propertyPath: m_Radius
+      value: 44.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -441,7 +445,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 54, y: 0}
+  m_AnchoredPosition: {x: -45, y: 0}
   m_SizeDelta: {x: 100, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!50 &373409180
@@ -588,11 +592,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 160
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -624,11 +628,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -147.33325
+      value: 20.82004
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -211.33331
+      value: 20.105057
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -646,6 +650,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -329280676, guid: 3357593d37411444789bcd6de2cc4511, type: 3}
+    - target: {fileID: 3096821380777910547, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
+      propertyPath: m_Radius
+      value: 39.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7332135795809038198, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_Name
       value: Chakras (1)
@@ -699,11 +707,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 176
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 176
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -735,11 +743,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 208
+      value: 103.99997
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -207.99997
+      value: -103.999985
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -756,6 +764,10 @@ PrefabInstance:
     - target: {fileID: 6036396579504340085, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_Name
       value: Slot1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498580633286034932, guid: 8c17616067069a0449a2052c7336023f, type: 3}
+      propertyPath: m_Radius
+      value: 44.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1016,7 +1028,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -94, y: 0}
+  m_AnchoredPosition: {x: 50.26941, y: 0}
   m_SizeDelta: {x: 100, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!50 &555591280
@@ -1163,11 +1175,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 160
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1199,11 +1211,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -139.33325
+      value: 130.77213
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 400.6667
+      value: 379.2819
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1221,6 +1233,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1343109814, guid: 3357593d37411444789bcd6de2cc4511, type: 3}
+    - target: {fileID: 3096821380777910547, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
+      propertyPath: m_Radius
+      value: 39.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7332135795809038198, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_Name
       value: Chakras (3)
@@ -1346,11 +1362,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 176
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 176
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1382,7 +1398,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 304
+      value: 148
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1403,6 +1419,10 @@ PrefabInstance:
     - target: {fileID: 6036396579504340085, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_Name
       value: Slot1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498580633286034932, guid: 8c17616067069a0449a2052c7336023f, type: 3}
+      propertyPath: m_Radius
+      value: 44.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1506,11 +1526,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 160
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1542,11 +1562,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -355.3333
+      value: 123.441986
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -63.333313
+      value: 34.765343
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1564,6 +1584,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1437603161, guid: 3357593d37411444789bcd6de2cc4511, type: 3}
+    - target: {fileID: 3096821380777910547, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
+      propertyPath: m_Radius
+      value: 39.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7332135795809038198, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_Name
       value: Chakras
@@ -1697,11 +1721,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 176
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 176
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1733,11 +1757,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -208
+      value: -108.000015
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 208.00003
+      value: 100.00003
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1754,6 +1778,10 @@ PrefabInstance:
     - target: {fileID: 6036396579504340085, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_Name
       value: Slot1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498580633286034932, guid: 8c17616067069a0449a2052c7336023f, type: 3}
+      propertyPath: m_Radius
+      value: 44.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1799,11 +1827,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 160
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1835,11 +1863,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -187.33331
+      value: 101.45154
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 4.666687
+      value: 137.38728
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1857,6 +1885,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1289401006, guid: 3357593d37411444789bcd6de2cc4511, type: 3}
+    - target: {fileID: 3096821380777910547, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
+      propertyPath: m_Radius
+      value: 39.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7332135795809038198, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_Name
       value: Chakras (5)
@@ -1905,11 +1937,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 176
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 176
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1945,7 +1977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -303.99997
+      value: -147.99998
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1962,6 +1994,10 @@ PrefabInstance:
     - target: {fileID: 6036396579504340085, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_Name
       value: Slot1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498580633286034932, guid: 8c17616067069a0449a2052c7336023f, type: 3}
+      propertyPath: m_Radius
+      value: 44.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2007,11 +2043,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 160
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2043,11 +2079,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -331.33325
+      value: 86.79129
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 400.6667
+      value: 298.65036
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2065,6 +2101,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1471926467, guid: 3357593d37411444789bcd6de2cc4511, type: 3}
+    - target: {fileID: 3096821380777910547, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
+      propertyPath: m_Radius
+      value: 39.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7332135795809038198, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_Name
       value: Chakras (4)
@@ -2108,10 +2148,10 @@ RectTransform:
   - {fileID: 1887556499}
   m_Father: {fileID: 1568552141}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20, y: 0}
-  m_SizeDelta: {x: 2092, y: 1080}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1232432723
 GameObject:
@@ -2151,7 +2191,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.000020384789, y: 11.99998}
-  m_SizeDelta: {x: 960, y: 960}
+  m_SizeDelta: {x: 480, y: 480}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1232432725
 MonoBehaviour:
@@ -2274,11 +2314,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 176
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 176
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2310,11 +2350,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -208
+      value: -104.000015
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -207.99997
+      value: -103.999985
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2331,6 +2371,10 @@ PrefabInstance:
     - target: {fileID: 6036396579504340085, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_Name
       value: Slot1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498580633286034932, guid: 8c17616067069a0449a2052c7336023f, type: 3}
+      propertyPath: m_Radius
+      value: 44.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2519,10 +2563,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 64
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 32
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 320, y: 180}
+  m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
@@ -2616,11 +2660,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 160
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2652,11 +2696,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -467.33325
+      value: 35.480316
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 572.6667
+      value: 379.28186
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2674,6 +2718,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1238180397, guid: 3357593d37411444789bcd6de2cc4511, type: 3}
+    - target: {fileID: 3096821380777910547, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
+      propertyPath: m_Radius
+      value: 39.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7332135795809038198, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_Name
       value: Chakras (2)
@@ -2717,11 +2765,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 160
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2753,7 +2801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -179.33325
+      value: 35.480316
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2775,6 +2823,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -467738062, guid: 3357593d37411444789bcd6de2cc4511, type: 3}
+    - target: {fileID: 3096821380777910547, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
+      propertyPath: m_Radius
+      value: 39.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7332135795809038198, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_Name
       value: Chakras (6)
@@ -3477,11 +3529,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 176
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 176
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3513,7 +3565,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -304
+      value: -148.00003
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3534,6 +3586,10 @@ PrefabInstance:
     - target: {fileID: 6036396579504340085, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_Name
       value: Slot1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498580633286034932, guid: 8c17616067069a0449a2052c7336023f, type: 3}
+      propertyPath: m_Radius
+      value: 44.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3708,11 +3764,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 160
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3744,7 +3800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -343.33325
+      value: 13.489899
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3766,6 +3822,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -989295858, guid: 3357593d37411444789bcd6de2cc4511, type: 3}
+    - target: {fileID: 3096821380777910547, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
+      propertyPath: m_Radius
+      value: 39.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7332135795809038198, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_Name
       value: Chakras
@@ -3809,11 +3869,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 176
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 176
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3845,11 +3905,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -0.000030517578
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 304.00003
+      value: 148.00003
       objectReference: {fileID: 0}
     - target: {fileID: 81671494306410675, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3866,6 +3926,10 @@ PrefabInstance:
     - target: {fileID: 6036396579504340085, guid: 8c17616067069a0449a2052c7336023f, type: 3}
       propertyPath: m_Name
       value: Slot1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498580633286034932, guid: 8c17616067069a0449a2052c7336023f, type: 3}
+      propertyPath: m_Radius
+      value: 44.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
