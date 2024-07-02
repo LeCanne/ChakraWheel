@@ -22,10 +22,7 @@ public class WheelController : MonoBehaviour, IDragHandler
     public void OnDrag(PointerEventData eventData)
     {
         if (eventData.dragging)
-        {
-               
-            
-           
+        { 
                 rb2d.angularVelocity = Input.GetAxis("Mouse Y") * 100;
             
         }
