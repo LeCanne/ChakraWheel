@@ -33,6 +33,7 @@ public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
           {
             if (onSlot == true)
             {
+                    
                 transform.position = ChosenSlot.transform.position;
                     gameObject.layer = 6;
             }

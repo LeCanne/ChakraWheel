@@ -35,16 +35,5 @@ public class SlotContainer : MonoBehaviour
         }
     }
 
-    public void ContainChakra()
-    {
-        if(ContainedChakra != null)
-        {
-            collid2D.enabled = false;
-
-        }
-        else
-        {
-            collid2D.enabled = true;
-        }
-    }
+    
 }

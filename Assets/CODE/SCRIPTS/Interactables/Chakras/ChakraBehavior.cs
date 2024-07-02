@@ -30,8 +30,8 @@ public class ChakraBehavior : MonoBehaviour
                 chakraPhysics.ChosenSlot = collision.gameObject;
                 chakraPhysics.onSlot = true;
                 collision.GetComponent<SlotContainer>().ContainedChakra = gameObject;
-                collision.GetComponent<SlotContainer>().ContainChakra();
-
+             
+                this.enabled = false;
             }
            
 
@@ -47,12 +47,13 @@ public class ChakraBehavior : MonoBehaviour
                 
                 if (other.gameObject.tag == "Slot")
                 {
+                    
                     Debug.Log("Do");
                     chakraPhysics.onSlot = false;
                     chakraPhysics.ChosenSlot = null;
-                    
-                    other.GetComponent<SlotContainer>().ContainedChakra = null;
-                    other.GetComponent<SlotContainer>().ContainChakra();
+                    gameObject.layer = 5;
+                  other.GetComponent<SlotContainer>().ContainedChakra = null;
+                   
                    
                 }
             }
