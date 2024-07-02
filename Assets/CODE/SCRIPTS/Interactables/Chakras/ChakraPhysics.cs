@@ -6,9 +6,11 @@ using UnityEngine.EventSystems;
 public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
 {
     private Rigidbody2D rb2d;
-    private bool inDrag;
+    public bool inDrag;
+    public bool onSlot;
     private Vector2 drag;
     [SerializeField] private PhysicsMaterial2D bouncemat;
+    public GameObject ChosenSlot;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,23 @@ public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
     void Update()
     {
         transform.eulerAngles = Vector3.zero;
+        InSlotCheck();
+    }
+
+    void InSlotCheck()
+    {
+        if(ChosenSlot != null)
+        {
+             if(inDrag == false)
+        {
+            if (onSlot == true)
+            {
+                transform.position = ChosenSlot.transform.position;
+            }
+        }
+        }
+       
+       
     }
 
     private void FixedUpdate()
@@ -51,7 +70,7 @@ public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
     public void OnEndDrag(PointerEventData eventData)
     {
         inDrag = false;
-        Debug.Log("Done");
+        
         rb2d.sharedMaterial = bouncemat;
     }
 }

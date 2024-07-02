@@ -7,6 +7,7 @@ public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler
 {
     private Rigidbody2D rb2d;
     public float speed;
+    public GameObject[] gameobjects;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +15,24 @@ public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler
     }
 
     // Update is called once per frame
+
+    void Update()
+    {
+        if(rb2d.angularVelocity != 0)
+        {
+            foreach(GameObject gameobject in gameobjects)
+            {
+                gameobject.GetComponent<Collider2D>().enabled = false;
+            }
+        }
+        else
+        {
+            foreach (GameObject gameobject in gameobjects)
+            {
+                gameobject.GetComponent<Collider2D>().enabled = true;
+            }
+        }
+    }
     void FixedUpdate()
     {
        // rb2d.angularVelocity = -100f;
