@@ -123,7 +123,7 @@ public class RoundManager : MonoBehaviour
                     obj.GetComponent<ChakraPhysics>().ChosenSlot = slot.gameObject;
                    
                     obj.GetComponent<ChakraPhysics>().onSlot = true;
-                    obj.layer = 6;
+                    obj.layer = 7;
                     slot.ContainedChakra = obj;
                     current += 1;
                 }
