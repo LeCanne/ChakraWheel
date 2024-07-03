@@ -7,6 +7,7 @@ public class SlotContainer : MonoBehaviour
     
     public GameObject DarkChakra;
     public bool isDarkened;
+    public bool usable;
     public bool spinning;
     public bool hasChakra;
    
@@ -22,7 +23,7 @@ public class SlotContainer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //CheckDarkness();
+        CheckDarkness();
         CheckChakra();
     }
 
@@ -31,10 +32,12 @@ public class SlotContainer : MonoBehaviour
         if(isDarkened == true)
         {
             DarkChakra.SetActive(true);
+            gameObject.layer = 8;
         }
         else
         {
             DarkChakra.SetActive(false);
+            gameObject.layer = 7;
         }
     }
 
@@ -48,6 +51,18 @@ public class SlotContainer : MonoBehaviour
         {
             hasChakra = false;
         }
+    }
+
+    public void Assign(GameObject objecttoAssign)
+    {
+        if (usable == true && isDarkened == false)
+        {
+            
+            objecttoAssign.GetComponent<ChakraPhysics>().ChosenSlot = gameObject;
+            objecttoAssign.GetComponent<ChakraPhysics>().onSlot = true;
+            ContainedChakra = objecttoAssign;
+        }
+        
     }
 
     

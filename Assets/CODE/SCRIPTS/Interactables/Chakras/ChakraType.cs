@@ -9,6 +9,7 @@ public class ChakraType : MonoBehaviour
 {
     public Image _spriteChakra;
     private int typeChakra;
+    public bool randomized;
     public List<Sprite> spriteList;
     private Image _image;
     public string nameColor;
@@ -32,6 +33,7 @@ public class ChakraType : MonoBehaviour
 
     private void Awake()
     {
+        typeChakra = 8;
         _image = GetComponent<Image>();
         DefineChakra();
     }
@@ -44,8 +46,12 @@ public class ChakraType : MonoBehaviour
     // Update is called once per frame
     void DefineChakra()
     {
-        typeChakra = Random.Range(0, spriteList.Count);
-        _image.sprite = spriteList[typeChakra];
+        if(randomized == true)
+        {
+            typeChakra = Random.Range(0, spriteList.Count);
+            _image.sprite = spriteList[typeChakra];
+        }
+       
 
         switch (typeChakra)
         {

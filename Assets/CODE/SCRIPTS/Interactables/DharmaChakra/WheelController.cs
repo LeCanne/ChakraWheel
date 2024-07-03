@@ -11,9 +11,11 @@ public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler,
     public GameObject[] gameobjects;
     public Collider2D Blade;
     public WheelBlade wheelBlade;
+    public RoundManager roundManager;
     public bool draggable;
     public TMP_Text txt_Turn;
     public int turn;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -24,38 +26,45 @@ public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler,
 
     void Update()
     {
-        if(rb2d.angularVelocity != 0)
-        {
-            foreach(GameObject gameobject in gameobjects)
+        
+            if (Mathf.Abs(rb2d.angularVelocity) > 300f)
             {
-                gameobject.GetComponent<SlotContainer>().spinning = true;
+                foreach (GameObject gameobject in gameobjects)
+                {
+                    gameobject.GetComponent<SlotContainer>().usable = false;
+                }
             }
-        }
-        else
-        {
-            if(draggable == false)
+
+            if(draggable == true)
             {
-                if(wheelBlade.win == true)
+             if (Mathf.Abs(rb2d.angularVelocity) == 0)
+             {
+                foreach (GameObject gameobject in gameobjects)
                 {
-                    ScoreManager.Score += 100;
-                    draggable = true;
+                    gameobject.GetComponent<SlotContainer>().usable = true;
                 }
-                else
-                {
-                    draggable = true;
-                    foreach (GameObject gameobject in gameobjects)
-                    {
-                        Destroy(gameobject.GetComponent<SlotContainer>().ContainedChakra);
-                    }
-                }
-               
+             }
             }
+        
+      
+        if (rb2d.angularVelocity == 0)
+        {
+            if (draggable == false)
+            {
+                
+
+                roundManager.LaunchNewRound();
+
+            }
+
             
-            foreach (GameObject gameobject in gameobjects)
-            {
-                gameobject.GetComponent<SlotContainer>().spinning = false;
-            }
+       }
+       else
+       {
+            
         }
+           
+        
     }
     void FixedUpdate()
     {
@@ -108,6 +117,7 @@ public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler,
         {
             if (Mathf.Abs(rb2d.angularVelocity) > 300f)
             {
+              
                 Blade.enabled = true;
                 draggable = false;
                 turn += 1;
