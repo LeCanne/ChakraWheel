@@ -26,30 +26,28 @@ public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler,
 
     void Update()
     {
-       
-       if(rb2d.angularVelocity == 0)
+        if (Mathf.Abs(rb2d.angularVelocity) > 300f)
+        {
+            foreach (GameObject gameobject in gameobjects)
+            {
+                gameobject.GetComponent<SlotContainer>().usable = false;
+            }
+        }
+            if (rb2d.angularVelocity == 0)
         {
             if (draggable == false)
             {
-                if (wheelBlade.win == false)
-                {
-
-                    foreach (GameObject gameobject in gameobjects)
-                    {
-                        Destroy(gameobject.GetComponent<SlotContainer>().ContainedChakra);
-                    }
-
-
-                }
+                
 
                 roundManager.LaunchNewRound();
 
             }
 
-            foreach (GameObject gameobject in gameobjects)
-            {
-                gameobject.GetComponent<SlotContainer>().spinning = false;
-            }
+            
+       }
+       else
+       {
+            
         }
            
         
@@ -105,10 +103,7 @@ public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler,
         {
             if (Mathf.Abs(rb2d.angularVelocity) > 300f)
             {
-                foreach (GameObject gameobject in gameobjects)
-                {
-                    gameobject.GetComponent<SlotContainer>().usable = false;
-                }
+              
                 Blade.enabled = true;
                 draggable = false;
                 turn += 1;

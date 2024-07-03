@@ -25,7 +25,7 @@ public class ChakraBehavior : MonoBehaviour
     {
         if(collision.gameObject.tag == "Slot" && chakraPhysics.inDrag == true)
         {
-            if(collision.GetComponent<SlotContainer>().ContainedChakra == null && collision.GetComponent<SlotContainer>().spinning == false)
+            if(collision.GetComponent<SlotContainer>().ContainedChakra == null && collision.GetComponent<SlotContainer>().usable == true)
             {
                 
                 collision.GetComponent<SlotContainer>().Assign(gameObject);
@@ -45,7 +45,7 @@ public class ChakraBehavior : MonoBehaviour
             if (other.gameObject.tag == "Slot")
             {                 
                 
-                if (other.GetComponent<SlotContainer>().ContainedChakra == this.gameObject && other.GetComponent<SlotContainer>().spinning == false)
+                if (other.GetComponent<SlotContainer>().ContainedChakra == this.gameObject && other.GetComponent<SlotContainer>().usable == true)
                 {
                     
                     Debug.Log("Do");

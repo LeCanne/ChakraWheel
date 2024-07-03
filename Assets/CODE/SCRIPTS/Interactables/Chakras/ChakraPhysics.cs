@@ -6,8 +6,10 @@ using UnityEngine.EventSystems;
 public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
 {
     private Rigidbody2D rb2d;
+    public GameObject Chains;
     public bool inDrag;
     public bool onSlot;
+    public bool locked;
     private Vector2 drag;
     [SerializeField] private PhysicsMaterial2D bouncemat;
     public GameObject ChosenSlot;
@@ -23,6 +25,11 @@ public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
     {
         transform.eulerAngles = Vector3.zero;
         InSlotCheck();
+
+        
+            Chains.SetActive(locked);
+        
+       
     }
 
     void InSlotCheck()
@@ -55,15 +62,18 @@ public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
 
     public void OnDrag(PointerEventData eventData)
     {
-
-        if (eventData.dragging == true)
+        if(locked == false)
         {
-            rb2d.velocity = Vector2.zero;
-           
-            drag = eventData.position;
-            inDrag = true;
-          
+            if (eventData.dragging == true)
+            {
+                rb2d.velocity = Vector2.zero;
+
+                drag = eventData.position;
+                inDrag = true;
+
+            }
         }
+       
        
         
        
