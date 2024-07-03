@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WheelBlade : MonoBehaviour
 {
-
+    public bool win;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +22,14 @@ public class WheelBlade : MonoBehaviour
         if(collision.gameObject.tag == "Slot")
         {
             ScoreManager.Score += 10;
-            
+            if(collision.GetComponent<SlotContainer>().hasChakra == true)
+            {
+                win = true;
+            }
+            else
+            {
+                win = false;
+            }
         }
     }
 }

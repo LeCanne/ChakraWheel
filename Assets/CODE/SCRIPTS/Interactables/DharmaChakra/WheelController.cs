@@ -10,6 +10,7 @@ public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler,
     public float speed;
     public GameObject[] gameobjects;
     public Collider2D Blade;
+    public WheelBlade wheelBlade;
     public bool draggable;
     public TMP_Text txt_Turn;
     public int turn;
@@ -32,7 +33,24 @@ public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler,
         }
         else
         {
-            draggable = true;
+            if(draggable == false)
+            {
+                if(wheelBlade.win == true)
+                {
+                    ScoreManager.Score += 100;
+                    draggable = true;
+                }
+                else
+                {
+                    draggable = true;
+                    foreach (GameObject gameobject in gameobjects)
+                    {
+                        Destroy(gameobject.GetComponent<SlotContainer>().ContainedChakra);
+                    }
+                }
+               
+            }
+            
             foreach (GameObject gameobject in gameobjects)
             {
                 gameobject.GetComponent<SlotContainer>().spinning = false;

@@ -2395,6 +2395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c649d64953847514090a91fc4bca9850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  win: 0
 --- !u!1 &1232432723
 GameObject:
   m_ObjectHideFlags: 0
@@ -2523,7 +2524,10 @@ MonoBehaviour:
   - {fileID: 689154567}
   - {fileID: 2073583727}
   Blade: {fileID: 1214080049}
-  draggable: 0
+  wheelBlade: {fileID: 1214080052}
+  draggable: 1
+  txt_Turn: {fileID: 1800993230}
+  turn: 0
 --- !u!1001 &1392416523
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3175,7 +3179,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -89.83333, y: -13.166679}
+  m_AnchoredPosition: {x: -88.33333, y: -13.166679}
   m_SizeDelta: {x: 55.75971, y: 9.8524}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1800993230
