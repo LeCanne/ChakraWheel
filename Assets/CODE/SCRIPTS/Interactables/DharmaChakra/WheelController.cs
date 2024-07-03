@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler
+public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUpHandler
 {
     private Rigidbody2D rb2d;
     public float speed;
     public GameObject[] gameobjects;
+    public Collider2D Blade;
+    public bool draggable;
+    public TMP_Text txt_Turn;
+    public int turn;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +32,7 @@ public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler
         }
         else
         {
+            draggable = true;
             foreach (GameObject gameobject in gameobjects)
             {
                 gameobject.GetComponent<SlotContainer>().spinning = false;
@@ -40,23 +46,29 @@ public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (Input.mousePosition.x < Screen.width / 2f)
+        if(draggable == true)
         {
-            if (eventData.dragging)
-            {
-                rb2d.angularVelocity = Input.GetAxis("Mouse Y") * -100;
+            Blade.enabled = false;
 
+            if (Input.mousePosition.x < Screen.width / 2f)
+            {
+                if (eventData.dragging)
+                {
+                    rb2d.angularVelocity = Input.GetAxis("Mouse Y") * -100;
+
+                }
+            }
+            else
+            {
+
+                if (eventData.dragging)
+                {
+                    rb2d.angularVelocity = Input.GetAxis("Mouse Y") * 100;
+
+                }
             }
         }
-        else
-        {
-           
-            if (eventData.dragging)
-            {
-                rb2d.angularVelocity = Input.GetAxis("Mouse Y") * 100;
-
-            }
-        }
+      
       
        
        
@@ -65,7 +77,29 @@ public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        
-        rb2d.angularVelocity = 0;
+        if(draggable == true)
+        {
+            rb2d.angularVelocity = 0;
+        }
+       
     }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+      if(draggable == true)
+        {
+            if (Mathf.Abs(rb2d.angularVelocity) > 300f)
+            {
+                Blade.enabled = true;
+                draggable = false;
+                turn += 1;
+                txt_Turn.text = turn.ToString("Turn " + "0");
+            }
+        }
+       
+      
+        
+    }
+
+    
 }
