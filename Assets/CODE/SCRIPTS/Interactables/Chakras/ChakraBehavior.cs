@@ -27,9 +27,8 @@ public class ChakraBehavior : MonoBehaviour
         {
             if(collision.GetComponent<SlotContainer>().ContainedChakra == null && collision.GetComponent<SlotContainer>().spinning == false)
             {
-                chakraPhysics.ChosenSlot = collision.gameObject;
-                chakraPhysics.onSlot = true;
-                collision.GetComponent<SlotContainer>().ContainedChakra = gameObject;
+                
+                collision.GetComponent<SlotContainer>().Assign(gameObject);
                 
 
                 this.enabled = false;
@@ -53,7 +52,7 @@ public class ChakraBehavior : MonoBehaviour
                     chakraPhysics.onSlot = false;
                     chakraPhysics.ChosenSlot = null;
                     gameObject.layer = 5;
-                  other.GetComponent<SlotContainer>().ContainedChakra = null;
+                    other.GetComponent<SlotContainer>().ContainedChakra = null;
                     
 
                 }

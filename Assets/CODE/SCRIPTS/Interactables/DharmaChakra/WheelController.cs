@@ -11,9 +11,11 @@ public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler,
     public GameObject[] gameobjects;
     public Collider2D Blade;
     public WheelBlade wheelBlade;
+    public RoundManager roundManager;
     public bool draggable;
     public TMP_Text txt_Turn;
     public int turn;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -24,38 +26,33 @@ public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler,
 
     void Update()
     {
-        if(rb2d.angularVelocity != 0)
+       
+       if(rb2d.angularVelocity == 0)
         {
-            foreach(GameObject gameobject in gameobjects)
+            if (draggable == false)
             {
-                gameobject.GetComponent<SlotContainer>().spinning = true;
-            }
-        }
-        else
-        {
-            if(draggable == false)
-            {
-                if(wheelBlade.win == true)
+                if (wheelBlade.win == false)
                 {
-                    ScoreManager.Score += 100;
-                    draggable = true;
-                }
-                else
-                {
-                    draggable = true;
+
                     foreach (GameObject gameobject in gameobjects)
                     {
                         Destroy(gameobject.GetComponent<SlotContainer>().ContainedChakra);
                     }
+
+
                 }
-               
+
+                roundManager.LaunchNewRound();
+
             }
-            
+
             foreach (GameObject gameobject in gameobjects)
             {
                 gameobject.GetComponent<SlotContainer>().spinning = false;
             }
         }
+           
+        
     }
     void FixedUpdate()
     {
@@ -108,6 +105,10 @@ public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler,
         {
             if (Mathf.Abs(rb2d.angularVelocity) > 300f)
             {
+                foreach (GameObject gameobject in gameobjects)
+                {
+                    gameobject.GetComponent<SlotContainer>().usable = false;
+                }
                 Blade.enabled = true;
                 draggable = false;
                 turn += 1;

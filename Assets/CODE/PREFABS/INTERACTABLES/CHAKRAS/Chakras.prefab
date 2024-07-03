@@ -171,6 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spriteChakra: {fileID: 0}
+  randomized: 1
   spriteList:
   - {fileID: -467738062, guid: 3357593d37411444789bcd6de2cc4511, type: 3}
   - {fileID: -1471926467, guid: 3357593d37411444789bcd6de2cc4511, type: 3}
