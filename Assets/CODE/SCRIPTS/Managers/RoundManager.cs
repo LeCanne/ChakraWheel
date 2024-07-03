@@ -83,12 +83,12 @@ public class RoundManager : MonoBehaviour
         }
       
         yield return new WaitForSeconds(1f);
-        int max = 2;
+        int max = 4;
         int current = 0;
+        int r = 1;
         foreach (SlotContainer slot in slots)
         {
-            int r = Random.Range(0, 2);
-            if(current < max)
+            if (current <= max)
             {
                 if (r == 1)
                 {
@@ -105,6 +105,8 @@ public class RoundManager : MonoBehaviour
             {
                 slot.gameObject.layer = 7;
             }
+            r = Random.Range(0, 6);
+          
 
             
         }
@@ -113,7 +115,7 @@ public class RoundManager : MonoBehaviour
         {
            if(slot.isDarkened == false && current == 0)
            {
-              int r =  Random.Range(0, 2);
+              r =  Random.Range(0, 2);
                 if(r == 1)
                 {
                     
