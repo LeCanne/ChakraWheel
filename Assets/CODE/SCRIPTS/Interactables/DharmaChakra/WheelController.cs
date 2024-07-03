@@ -26,13 +26,17 @@ public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler,
 
     void Update()
     {
-        if (Mathf.Abs(rb2d.angularVelocity) > 300f)
+        if(draggable == false)
         {
-            foreach (GameObject gameobject in gameobjects)
+            if (Mathf.Abs(rb2d.angularVelocity) > 300f)
             {
-                gameobject.GetComponent<SlotContainer>().usable = false;
+                foreach (GameObject gameobject in gameobjects)
+                {
+                    gameobject.GetComponent<SlotContainer>().usable = false;
+                }
             }
         }
+      
             if (rb2d.angularVelocity == 0)
         {
             if (draggable == false)

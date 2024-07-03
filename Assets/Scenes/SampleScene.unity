@@ -634,6 +634,8 @@ MonoBehaviour:
   - {fileID: 2073583729}
   Wheelcontroller: {fileID: 1232432728}
   process: 0
+  parentGame: {fileID: 679567192}
+  Chakra: {fileID: 7332135795809038198, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
 --- !u!4 &374574234
 Transform:
   m_ObjectHideFlags: 0
