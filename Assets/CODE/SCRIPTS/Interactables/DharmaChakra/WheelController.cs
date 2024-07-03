@@ -22,14 +22,14 @@ public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler
         {
             foreach(GameObject gameobject in gameobjects)
             {
-                gameobject.GetComponent<Collider2D>().enabled = false;
+                gameobject.GetComponent<SlotContainer>().spinning = true;
             }
         }
         else
         {
             foreach (GameObject gameobject in gameobjects)
             {
-                gameobject.GetComponent<Collider2D>().enabled = true;
+                gameobject.GetComponent<SlotContainer>().spinning = false;
             }
         }
     }

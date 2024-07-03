@@ -7,6 +7,9 @@ public class SlotContainer : MonoBehaviour
     
     public GameObject DarkChakra;
     public bool isDarkened;
+    public bool spinning;
+    public bool hasChakra;
+   
     public GameObject ContainedChakra;
     private Collider2D collid2D;
     
@@ -20,7 +23,7 @@ public class SlotContainer : MonoBehaviour
     void Update()
     {
         //CheckDarkness();
-        
+        CheckChakra();
     }
 
     void CheckDarkness()
@@ -32,6 +35,18 @@ public class SlotContainer : MonoBehaviour
         else
         {
             DarkChakra.SetActive(false);
+        }
+    }
+
+    void CheckChakra()
+    {
+        if(ContainedChakra != null)
+        {
+            hasChakra = true;
+        }
+        else
+        {
+            hasChakra = false;
         }
     }
 
