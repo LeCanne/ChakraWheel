@@ -4395,17 +4395,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2028442193}
   m_CullTransparentMesh: 1
---- !u!1 &2042990623 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5433330494947831127, guid: 5e1d4bdc38be6514caca8e9b78254adb, type: 3}
-  m_PrefabInstance: {fileID: 619520751360329741}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2042990624 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2588196135947979923, guid: 5e1d4bdc38be6514caca8e9b78254adb, type: 3}
   m_PrefabInstance: {fileID: 619520751360329741}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2042990623}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27eece475aff48d438d6552ce8ae443c, type: 3}
@@ -4906,6 +4901,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2042990624}
+    - target: {fileID: 320187387790807356, guid: 320da26140883eb4a9838f7b2b21f931, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3145494017503653254, guid: 320da26140883eb4a9838f7b2b21f931, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5088,9 +5087,25 @@ PrefabInstance:
       value: BT_Quit
       objectReference: {fileID: 0}
     - target: {fileID: 3715025596702547127, guid: 2391f0a87a1bcad44b0b094dd6b9f440, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3715025596702547127, guid: 2391f0a87a1bcad44b0b094dd6b9f440, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2042990623}
+      objectReference: {fileID: 2042990624}
+    - target: {fileID: 3715025596702547127, guid: 2391f0a87a1bcad44b0b094dd6b9f440, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SceneLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 3715025596702547127, guid: 2391f0a87a1bcad44b0b094dd6b9f440, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3715025596702547127, guid: 2391f0a87a1bcad44b0b094dd6b9f440, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
