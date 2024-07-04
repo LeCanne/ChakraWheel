@@ -10,14 +10,27 @@ public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
     public bool inDrag;
     public bool onSlot;
     public bool locked;
+    public bool checkOnce;
     private Vector2 drag;
     [SerializeField] private PhysicsMaterial2D bouncemat;
     public GameObject ChosenSlot;
     // Start is called before the first frame update
+    void Awake()
+    {
+        if (locked == false && checkOnce == false)
+        {
+            
+                BallsManager.balls.Add(gameObject);
+
+            
+
+        }
+    }
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         rb2d.sharedMaterial = bouncemat;
+       
     }
 
     // Update is called once per frame
@@ -28,8 +41,9 @@ public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
 
         
             Chains.SetActive(locked);
-        
+
        
+
     }
 
     void InSlotCheck()
