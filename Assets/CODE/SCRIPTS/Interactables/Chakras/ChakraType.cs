@@ -14,7 +14,7 @@ public class ChakraType : MonoBehaviour
     private Image _image;
     public string nameColor;
    
-    private enum CHAKRATYPE
+    public enum CHAKRATYPE
     {
         Yellow,
         Purple,
@@ -27,7 +27,7 @@ public class ChakraType : MonoBehaviour
         
     }
 
-    private CHAKRATYPE chakra;
+    public CHAKRATYPE chakra;
 
 
 

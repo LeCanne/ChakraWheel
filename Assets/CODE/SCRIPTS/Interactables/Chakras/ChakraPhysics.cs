@@ -17,14 +17,7 @@ public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
     // Start is called before the first frame update
     void Awake()
     {
-        if (locked == false && checkOnce == false)
-        {
-            
-                BallsManager.balls.Add(gameObject);
-
-            
-
-        }
+        
     }
     void Start()
     {
@@ -36,6 +29,14 @@ public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
     // Update is called once per frame
     void Update()
     {
+        if (locked == false && checkOnce == false)
+        {
+
+            BallsManager.balls.Add(gameObject);
+            checkOnce = true;
+
+
+        }
         transform.eulerAngles = Vector3.zero;
         InSlotCheck();
         if(gameObject.layer == 5)

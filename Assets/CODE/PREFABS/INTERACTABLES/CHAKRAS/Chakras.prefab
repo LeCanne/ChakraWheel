@@ -234,6 +234,7 @@ MonoBehaviour:
   inDrag: 0
   onSlot: 0
   locked: 0
+  checkOnce: 0
   bouncemat: {fileID: 6200000, guid: 045b5e8c101479f4fa7d521ed5ff869f, type: 2}
   ChosenSlot: {fileID: 0}
 --- !u!114 &4579457621729520165
@@ -260,6 +261,7 @@ MonoBehaviour:
   - {fileID: 1437603161, guid: 3357593d37411444789bcd6de2cc4511, type: 3}
   - {fileID: -329280676, guid: 3357593d37411444789bcd6de2cc4511, type: 3}
   nameColor: 
+  chakra: 0
 --- !u!114 &-2224123342223231396
 MonoBehaviour:
   m_ObjectHideFlags: 0
