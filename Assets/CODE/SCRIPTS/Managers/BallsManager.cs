@@ -11,6 +11,8 @@ public class BallsManager : MonoBehaviour
 
     public GameObject GameOver;
     public TMP_Text texti;
+    public bool started;
+
     bool white;
     bool red;
     bool green;
@@ -27,25 +29,30 @@ public class BallsManager : MonoBehaviour
         balls = new List<GameObject>();
 
         balls2.Clear();
-        balls2 = new List<GameObject>();    
+        balls2 = new List<GameObject>();
+
+        StartCoroutine(Stort());
     }
 
     // Update is called once per frame
     void Update()
     {
-       
-        if(balls.Count > 0)
+       if(started == true)
         {
-            balls.RemoveAll(s => s == null);
+            if (balls.Count > 0)
+            {
+                balls.RemoveAll(s => s == null);
+            }
+            else
+            {
+              
+                texti.text = "GAME OVER";
+                GameOver.SetActive(true);
+            }
+         
+            Win();
         }
-        else
-        {
-            Debug.Log("Lose");
-            texti.text = "GAME OVER";
-            GameOver.SetActive(true);
-        }
-        Debug.Log(balls2.Count);
-        Win();
+     
 
 
     }
@@ -114,5 +121,11 @@ public class BallsManager : MonoBehaviour
             pink = false;
         }
 
+    }
+
+    public IEnumerator Stort()
+    {
+        yield return new WaitForSeconds(0.5f);
+        started = true;
     }
 }

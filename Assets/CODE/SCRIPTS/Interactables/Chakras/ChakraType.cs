@@ -8,8 +8,9 @@ using UnityEngine.UI;
 public class ChakraType : MonoBehaviour
 {
     public Image _spriteChakra;
-    private int typeChakra;
+    public int typeChakra;
     public bool randomized;
+    
     public List<Sprite> spriteList;
     private Image _image;
     public string nameColor;
@@ -33,7 +34,7 @@ public class ChakraType : MonoBehaviour
 
     private void Awake()
     {
-        typeChakra = 8;
+       // typeChakra = 8;
         _image = GetComponent<Image>();
         DefineChakra();
     }
@@ -49,9 +50,11 @@ public class ChakraType : MonoBehaviour
         if(randomized == true)
         {
             typeChakra = Random.Range(0, spriteList.Count);
-            _image.sprite = spriteList[typeChakra];
+           
+            randomized = false;
         }
-       
+        _image.sprite = spriteList[typeChakra];
+
 
         switch (typeChakra)
         {
@@ -61,22 +64,22 @@ public class ChakraType : MonoBehaviour
             case 1:
                 chakra = CHAKRATYPE.Purple;
                 break;
-            case 3:
+            case 2:
                 chakra = CHAKRATYPE.Blue;
                 break;
-            case 4:
+            case 3:
                 chakra = CHAKRATYPE.Red;
                 break;
-            case 5:
+            case 4:
                 chakra = CHAKRATYPE.Orange;
                 break;
-            case 6:
+            case 5:
                 chakra = CHAKRATYPE.Green;
                 break;
-            case 7:
+            case 6:
                 chakra = CHAKRATYPE.Pink;
                 break;
-            case 8:
+            case 7:
                 chakra = CHAKRATYPE.White;
                 break;
 
