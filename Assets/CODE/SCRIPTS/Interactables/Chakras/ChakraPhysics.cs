@@ -57,6 +57,7 @@ public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
                     
                 transform.position = ChosenSlot.transform.position;
                     gameObject.layer = 6;
+                    
             }
           }
         }
@@ -81,7 +82,7 @@ public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
             if (eventData.dragging == true)
             {
                 rb2d.velocity = Vector2.zero;
-
+                gameObject.layer = 5;
                 drag = eventData.position;
                 inDrag = true;
 
