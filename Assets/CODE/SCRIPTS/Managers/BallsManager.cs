@@ -86,10 +86,12 @@ public class BallsManager : MonoBehaviour
 
             if (balls[i].GetComponent<ChakraType>().chakra == ChakraType.CHAKRATYPE.Pink)
             {
-                green = true;
+                pink = true;
             }
+
+
         }
-        if (white == true && red == true && green == true && purple == true && yellow == true && blue == true && orange == true && green == true)
+        if (white == true && red == true && green == true && purple == true && yellow == true && blue == true && orange == true && green == true && pink == true)
         {
             texti.text = "YOU WIN!";
             GameOver.SetActive(true);
@@ -104,6 +106,7 @@ public class BallsManager : MonoBehaviour
             blue = false;
             orange = false;
             green = false;
+            pink = false;
         }
 
     }
