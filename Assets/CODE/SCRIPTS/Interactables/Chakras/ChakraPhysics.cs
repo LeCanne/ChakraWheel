@@ -14,6 +14,7 @@ public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
     private Vector2 drag;
     [SerializeField] private PhysicsMaterial2D bouncemat;
     public GameObject ChosenSlot;
+    public AudioClip audioHit;
     // Start is called before the first frame update
     void Awake()
     {
@@ -105,5 +106,13 @@ public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
         inDrag = false;
         
         rb2d.sharedMaterial = bouncemat;
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Chakra")
+        {
+            AudioManager.instance.PlaySoundFXClip(audioHit, transform, 0.05f, Random.Range(0.8f, 1));
+        }
     }
 }
