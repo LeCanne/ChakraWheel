@@ -38,7 +38,10 @@ public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
     {
         transform.eulerAngles = Vector3.zero;
         InSlotCheck();
-
+        if(gameObject.layer == 5)
+        {
+            
+        }
         
             Chains.SetActive(locked);
 

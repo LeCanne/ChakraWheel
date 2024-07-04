@@ -111,26 +111,32 @@ public class RoundManager : MonoBehaviour
             
         }
         current = 0;
-        foreach (SlotContainer slot in slots)
+        while (current < 1)
         {
-           if(slot.isDarkened == false && current == 0)
-           {
-              r =  Random.Range(0, 2);
-                if(r == 1)
+
+
+            foreach (SlotContainer slot in slots)
+            {
+
+                if (slot.isDarkened == false && current == 0)
                 {
-                    
-                    GameObject obj = Instantiate(Chakra, slot.transform);
-                    obj.transform.parent = parentGame.transform;
-                    obj.GetComponent<ChakraPhysics>().locked = true;
-                    obj.GetComponent<ChakraPhysics>().ChosenSlot = slot.gameObject;
-                   
-                    obj.GetComponent<ChakraPhysics>().onSlot = true;
-                    obj.layer = 7;
-                    slot.ContainedChakra = obj;
-                    current += 1;
+                    r = Random.Range(0, 2);
+                    if (r == 1)
+                    {
+
+                        GameObject obj = Instantiate(Chakra, slot.transform);
+                        obj.transform.parent = parentGame.transform;
+                        obj.GetComponent<ChakraPhysics>().locked = true;
+                        obj.GetComponent<ChakraPhysics>().ChosenSlot = slot.gameObject;
+
+                        obj.GetComponent<ChakraPhysics>().onSlot = true;
+                        obj.layer = 7;
+                        slot.ContainedChakra = obj;
+                        current += 1;
+                    }
                 }
-           }
-            slot.usable = true;
+                slot.usable = true;
+            }
         }
         yield return new WaitForSeconds(1f);
         Wheelcontroller.draggable = true;
