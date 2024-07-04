@@ -13,6 +13,12 @@ public class BallsManager : MonoBehaviour
     public TMP_Text texti;
     public bool started;
 
+    public static GameObject UnderChakraLayer;
+    public static GameObject ChakraLayer;
+
+    public GameObject under;
+    public GameObject over;
+
     bool white;
     bool red;
     bool green;
@@ -21,7 +27,12 @@ public class BallsManager : MonoBehaviour
     bool blue;
     bool orange;
     bool pink;
-    
+
+    private void Awake()
+    {
+        UnderChakraLayer = under;
+        ChakraLayer = over;
+    }
     // Start is called before the first frame update
     void Start()
     {

@@ -238,6 +238,7 @@ MonoBehaviour:
   bouncemat: {fileID: 6200000, guid: 045b5e8c101479f4fa7d521ed5ff869f, type: 2}
   ChosenSlot: {fileID: 0}
   audioHit: {fileID: 8300000, guid: 7b75d144bd6a6794ab6a98d9b624e17c, type: 3}
+  audioInsert: {fileID: 8300000, guid: 8ca38f1936a996c4b96eb29b6b7b637f, type: 3}
 --- !u!114 &4579457621729520165
 MonoBehaviour:
   m_ObjectHideFlags: 0

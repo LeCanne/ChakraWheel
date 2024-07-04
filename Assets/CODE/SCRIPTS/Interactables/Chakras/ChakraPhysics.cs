@@ -15,6 +15,7 @@ public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
     [SerializeField] private PhysicsMaterial2D bouncemat;
     public GameObject ChosenSlot;
     public AudioClip audioHit;
+    public AudioClip audioInsert;
     // Start is called before the first frame update
     void Awake()
     {
@@ -42,7 +43,11 @@ public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
         InSlotCheck();
         if(gameObject.layer == 5)
         {
-            
+            gameObject.transform.SetParent(BallsManager.ChakraLayer.transform, true);
+        }
+        else
+        {
+            gameObject.transform.SetParent(BallsManager.UnderChakraLayer.transform, true);
         }
         
             Chains.SetActive(locked);
@@ -68,6 +73,9 @@ public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
             }
           }
         }
+        
+          
+        
        
        
     }
@@ -104,7 +112,10 @@ public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
     public void OnEndDrag(PointerEventData eventData)
     {
         inDrag = false;
-        
+        if(onSlot == true)
+        {
+            AudioManager.instance.PlaySoundFXClip(audioInsert, transform, 0.2f, Random.Range(0.7f, 1f));
+        }
         rb2d.sharedMaterial = bouncemat;
     }
 
@@ -112,7 +123,8 @@ public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
     {
         if(collision.gameObject.tag == "Chakra")
         {
-            AudioManager.instance.PlaySoundFXClip(audioHit, transform, 0.05f, Random.Range(0.8f, 1));
+            AudioManager.instance.PlaySoundFXClip(audioHit, transform, 0.1f, Random.Range(0.8f, 1));
+
         }
     }
 }

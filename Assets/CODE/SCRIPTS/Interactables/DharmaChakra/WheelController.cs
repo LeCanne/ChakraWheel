@@ -94,6 +94,21 @@ public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler,
 
                 }
             }
+
+            if (Input.mousePosition.y < Screen.height / 2f)
+            {
+                if (eventData.dragging)
+                {
+                    rb2d.angularVelocity += Input.GetAxis("Mouse X") * 100;
+                }
+            }
+            else
+            {
+                if (eventData.dragging)
+                {
+                    rb2d.angularVelocity += Input.GetAxis("Mouse X") * -100;
+                }
+            }
         }
       
       

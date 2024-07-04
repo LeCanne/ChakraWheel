@@ -20,7 +20,7 @@ public class WheelBladeSound : MonoBehaviour
     {
         if (collision.gameObject.tag == "Slot")
         {
-            AudioManager.instance.PlaySoundFXClip(audioClip, transform, 0.01f, Random.Range(0.7f, 1f));
+            AudioManager.instance.PlaySoundFXClip(audioClip, transform, 0.05f, Random.Range(0.7f, 1f));
         }
     }
 }

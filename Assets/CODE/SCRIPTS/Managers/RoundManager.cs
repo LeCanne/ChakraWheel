@@ -125,7 +125,7 @@ public class RoundManager : MonoBehaviour
                     {
 
                         GameObject obj = Instantiate(Chakra, slot.transform);
-                        obj.transform.parent = parentGame.transform;
+                       
                         obj.GetComponent<ChakraPhysics>().locked = true;
                         obj.GetComponent<ChakraPhysics>().ChosenSlot = slot.gameObject;
 

@@ -525,6 +525,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0844399d1d46b747a1f4b042010fe44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &315872703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 315872704}
+  m_Layer: 5
+  m_Name: UnderChakra
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &315872704
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315872703}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1568552141}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &373409178
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,7 +575,7 @@ GameObject:
   - component: {fileID: 373409180}
   m_Layer: 5
   m_Name: Image
-  m_TagString: Untagged
+  m_TagString: Chakra
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -781,7 +816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -877,6 +912,8 @@ MonoBehaviour:
   GameOver: {fileID: 134335711}
   texti: {fileID: 1083374693}
   started: 0
+  under: {fileID: 315872703}
+  over: {fileID: 679567192}
 --- !u!4 &456610443
 Transform:
   m_ObjectHideFlags: 0
@@ -1109,7 +1146,7 @@ Camera:
   field of view: 34
   orthographic: 1
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1234,7 +1271,7 @@ GameObject:
   - component: {fileID: 555591280}
   m_Layer: 5
   m_Name: Image (1)
-  m_TagString: Untagged
+  m_TagString: Chakra
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1594,12 +1631,12 @@ RectTransform:
   m_Children:
   - {fileID: 420053604}
   - {fileID: 1943360183}
-  - {fileID: 805007377}
   - {fileID: 1416595887}
   - {fileID: 772825999}
   - {fileID: 993501420}
   - {fileID: 859010853}
   - {fileID: 1943087753}
+  - {fileID: 805007377}
   m_Father: {fileID: 1568552141}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3789,6 +3826,7 @@ RectTransform:
   - {fileID: 901609791}
   - {fileID: 1232432724}
   - {fileID: 1636276018}
+  - {fileID: 315872704}
   - {fileID: 679567193}
   - {fileID: 1214080047}
   - {fileID: 1148451332}
@@ -4178,7 +4216,7 @@ GameObject:
   - component: {fileID: 1887556500}
   m_Layer: 5
   m_Name: Image (3)
-  m_TagString: Untagged
+  m_TagString: Chakra
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4505,11 +4543,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.63605046
+      value: 0.63604736
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -41.83332
+      value: -43.333313
       objectReference: {fileID: 0}
     - target: {fileID: 55436751872556659, guid: 30dd6eea0d209624893d97e13fd8c96f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4563,7 +4601,7 @@ GameObject:
   - component: {fileID: 2028442195}
   m_Layer: 5
   m_Name: Image (2)
-  m_TagString: Untagged
+  m_TagString: Chakra
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

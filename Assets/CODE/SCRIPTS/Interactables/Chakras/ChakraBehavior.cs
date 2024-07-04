@@ -51,7 +51,8 @@ public class ChakraBehavior : MonoBehaviour
                     {
                         BallsManager.balls2.Remove(gameObject);
                     }
-                    Debug.Log("Do");
+                  
+                   
                     chakraPhysics.onSlot = false;
                     chakraPhysics.ChosenSlot = null;
                     gameObject.layer = 5;
