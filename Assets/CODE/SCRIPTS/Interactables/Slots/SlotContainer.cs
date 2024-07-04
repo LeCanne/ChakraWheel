@@ -60,6 +60,10 @@ public class SlotContainer : MonoBehaviour
             
             objecttoAssign.GetComponent<ChakraPhysics>().ChosenSlot = gameObject;
             objecttoAssign.GetComponent<ChakraPhysics>().onSlot = true;
+            if(objecttoAssign.GetComponent<ChakraPhysics>().locked == false)
+            {
+                BallsManager.balls2.Add(objecttoAssign);
+            }
             ContainedChakra = objecttoAssign;
         }
         

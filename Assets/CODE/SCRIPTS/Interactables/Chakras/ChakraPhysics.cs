@@ -60,7 +60,9 @@ public class ChakraPhysics : MonoBehaviour, IDragHandler, IEndDragHandler
             {
                     
                 transform.position = ChosenSlot.transform.position;
-                    gameObject.layer = 6;
+                 gameObject.layer = 6;
+
+                   
                     
             }
           }

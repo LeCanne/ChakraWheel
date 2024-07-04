@@ -37,13 +37,13 @@ public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler,
 
             if(draggable == true)
             {
-             if (Mathf.Abs(rb2d.angularVelocity) == 0)
-             {
-                foreach (GameObject gameobject in gameobjects)
-                {
-                    gameobject.GetComponent<SlotContainer>().usable = true;
+               if (Mathf.Abs(rb2d.angularVelocity) == 0)
+               {
+                   foreach (GameObject gameobject in gameobjects)
+                   {
+                      gameobject.GetComponent<SlotContainer>().usable = true;
+                   }
                 }
-             }
             }
         
       
@@ -73,7 +73,7 @@ public class WheelController : MonoBehaviour, IDragHandler, IPointerDownHandler,
 
     public void OnDrag(PointerEventData eventData)
     {
-        if(draggable == true)
+        if(draggable == true && BallsManager.balls2.Count >= 1)
         {
             Blade.enabled = false;
 

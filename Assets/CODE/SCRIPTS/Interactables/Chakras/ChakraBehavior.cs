@@ -9,13 +9,13 @@ public class ChakraBehavior : MonoBehaviour
     
 
     
-    // Start is called before the first frame update
+   
     void Start()
     {
         chakraPhysics = GetComponent<ChakraPhysics>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         
@@ -47,7 +47,10 @@ public class ChakraBehavior : MonoBehaviour
                 
                 if (other.GetComponent<SlotContainer>().ContainedChakra == this.gameObject && other.GetComponent<SlotContainer>().usable == true)
                 {
-                    
+                    if (BallsManager.balls2.Contains(gameObject))
+                    {
+                        BallsManager.balls2.Remove(gameObject);
+                    }
                     Debug.Log("Do");
                     chakraPhysics.onSlot = false;
                     chakraPhysics.ChosenSlot = null;

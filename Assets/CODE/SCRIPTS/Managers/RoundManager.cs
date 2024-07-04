@@ -139,6 +139,7 @@ public class RoundManager : MonoBehaviour
             }
         }
         yield return new WaitForSeconds(1f);
+        BallsManager.balls2.Clear();
         Wheelcontroller.draggable = true;
         process = false;
         yield return null;

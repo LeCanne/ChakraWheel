@@ -7,6 +7,7 @@ using UnityEngine;
 public class BallsManager : MonoBehaviour
 {
     public static List<GameObject> balls = new List<GameObject>();
+    public static List<GameObject> balls2 = new List<GameObject>();
 
     public GameObject GameOver;
     public TMP_Text texti;
@@ -22,7 +23,11 @@ public class BallsManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        balls.Clear();
+        balls = new List<GameObject>();
+
+        balls2.Clear();
+        balls2 = new List<GameObject>();    
     }
 
     // Update is called once per frame
@@ -39,7 +44,7 @@ public class BallsManager : MonoBehaviour
             texti.text = "GAME OVER";
             GameOver.SetActive(true);
         }
-        Debug.Log(balls.Count);
+        Debug.Log(balls2.Count);
         Win();
 
 
